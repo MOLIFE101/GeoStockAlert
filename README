@@ -1,0 +1,16 @@
+# GeoCommodityAlertBot
+
+This bot monitors your layered “knock-on” watchlist for early signals of geopolitical / commodity market shocks.
+
+- Layered structure: Defence → Safe Haven → Energy → Industrial → Utilities
+- Candle logic: signals only fire if 5 consecutive candles confirm trend
+- Knock-on scoring system grades escalation likelihood
+- Pushover notifications (can swap to Telegram / Discord)
+
+## Setup
+
+1. Clone repo
+2. Create `.env` file based on `.env.example`
+3. `pip install -r requirements.txt`
+4. Deploy to Railway / any Python cloud environment
+5. Schedule `main.py` hourly or per candle timeframe
