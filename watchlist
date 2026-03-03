@@ -1,0 +1,25 @@
+# Layers of your watchlist (domino effect)
+
+WATCHLIST = {
+    "Layer1_Defence": [
+        "BA.L", "BAB.L", "BA", "ILCO.TA", "TASE.TA"
+    ],
+    "Layer2_SafeHaven": [
+        "GC=F", "NEM", "AU", "BARRICK", "XAGUSD"
+    ],
+    "Layer3_Energy": [
+        "USOIL", "NATGAS", "SHEL.L", "BP.L", "OXY", "TTE.PA"
+    ],
+    "Layer4_Industrial": [
+        "RIO.L", "FCX", "MP", "NUE", "BTU"
+    ],
+    "Layer5_Utilities": [
+        "NG.L", "CNA.L", "DRXL.L", "UU.L", "DRX.L"
+    ],
+    "RiskSentiment": [
+        "BTC-USD"
+    ]
+}
+
+CANDLE_PERIOD = "1d"
+MIN_CANDLES = 5  # Only fire signals if 5 consecutive candles present
