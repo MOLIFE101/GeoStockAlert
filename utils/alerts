@@ -1,0 +1,19 @@
+import requests
+import os
+
+PUSHOVER_USER = os.getenv("PUSHOVER_USER")
+PUSHOVER_TOKEN = os.getenv("PUSHOVER_TOKEN")
+
+def send_alert(message):
+    if not PUSHOVER_USER or not PUSHOVER_TOKEN:
+        print(f"[ALERT] {message}")
+        return
+
+    requests.post(
+        "https://api.pushover.net/1/messages.json",
+        data={
+            "token": PUSHOVER_TOKEN,
+            "user": PUSHOVER_USER,
+            "message": message
+        }
+    )
