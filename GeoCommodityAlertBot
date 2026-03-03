@@ -1,0 +1,14 @@
+GeoCommodityAlertBot/
+│
+├─ README.md
+├─ requirements.txt
+├─ .env.example
+├─ main.py
+├─ config.py
+├─ signals/
+│    ├─ __init__.py
+│    └─ candle_logic.py
+├─ utils/
+│    ├─ __init__.py
+│    └─ alerts.py
+└─ watchlist.py
